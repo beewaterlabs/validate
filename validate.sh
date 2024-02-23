@@ -6,7 +6,7 @@
 
 echo Vendor ID & Model name: | pr -Td
 
-lscpu | grep "Vendor ID\|Model name" | pr -Td
+lscpu | grep "Model name" | pr -Td
 
 #BIOS release date -- repalce aboveBIOS cmd []
 
