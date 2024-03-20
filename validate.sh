@@ -8,6 +8,12 @@ echo Vendor ID & Model name: | pr -Td
 
 lscpu | grep "Model name" | pr -Td
 
+#Show OS build details 
+
+echo OS-Flavor-Data: | pr -Td
+
+inxi -Sxxx
+
 #BIOS release date -- repalce aboveBIOS cmd []
 
 dmidecode -t bios | grep "Release Date:" | pr -Td
@@ -84,8 +90,3 @@ dmidecode | grep "Serial Number: 4"
 dmidecode | grep -c "Serial Number: 4"
 
 ###
-
-
-
-
-
