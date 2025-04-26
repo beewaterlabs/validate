@@ -72,7 +72,7 @@ df -h | grep "/nfs/site/home" | pr -test
 
 ps aux | grep "BESClient" | pr -Td
 
-#verify which NIS server is being used, this is correct: sync with C.B.
+#verify which NIS server is being used, this is correct []
 
 ypwhich | pr -Td
 
